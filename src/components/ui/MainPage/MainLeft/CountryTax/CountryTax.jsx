@@ -3,7 +3,7 @@
 const CountryTax = () => {
     return (
         <div>
-            <div className="bg-gray-200 p-4 rounded-lg mt-4 px-2">
+            <div className="bg-gray-200 p-4 pb-8 rounded-lg mt-4 px-2">
 
                 <div className="divider my-8 ">
                     <h1 className="text-lg font-bold">Country Tax </h1>
