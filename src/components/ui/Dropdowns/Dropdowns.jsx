@@ -1,5 +1,5 @@
 
-import { Button, Menu } from 'antd';
+import { Button, Menu, Space } from 'antd';
 import "./Dropdown.css";
 import { useDispatch } from 'react-redux';
 import { controlNav } from '../../../Redux/Features/NavbarSlice/NavbarSlice';
@@ -335,14 +335,19 @@ const Dropdowns = () => {
               }
             }>Close</Button>
         </div>
-        <Menu
-          mode="inline"
-          items={items}
-          style={{
 
-          }}
-          className='menu'
-        />
+
+        <Space direction="vertical" size="large" style={{ display: 'flex' }}>
+          <Menu
+            mode="inline"
+            items={items}
+            style={{
+
+            }}
+            className='menu'
+          />
+        </Space>
+
 
 
       </div >

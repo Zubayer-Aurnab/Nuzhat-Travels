@@ -11,7 +11,7 @@ const Table = () => {
                         <th scope="col" className="border-2 border-r-white bg-gray-200  p-2" >Client <br /> Price</th>
                         <th scope="col" className="border-2 border-r-white bg-gray-200  p-2" >Vendor <br /> Price</th>
                         <th scope="col" className="border-2 border-r-white bg-gray-200  p-2" >Profit <br /></th>
-                        <th scope="col" className="border-2 border-r-white bg-gray-200  p-2" >Action</th>
+                        <th scope="col" className="border-2 border-l-white bg-gray-200  p-2" >Action</th>
                     </tr>
                 </thead>
                 <tbody>

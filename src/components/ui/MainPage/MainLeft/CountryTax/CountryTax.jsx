@@ -17,7 +17,7 @@ const CountryTax = () => {
                     </Divider>
                 </div>
 
-                <div className=" flex flex-wrap lg:flex-row  gap-1 ">
+                <div className=" flex flex-wrap gap-1 lg:flex-row ">
                     <div className=" " >
                         <label >  BD :</label> <br />
                         <input

@@ -2,15 +2,12 @@
     transition: background-color 0.5s ease;
     background-color: #1F75FE;
     color: white !important;
+    margin-bottom: 17px;
 
 }
 
-/* Change background color of submenu title on hover */
-/* .menu .ant-menu-submenu-title:hover {
-    background-color: red;
-} */
 .ant-menu-submenu-title:hover {
 
-    background: red !important;
+    background: #fd5c63 !important;
 
 }
