@@ -32,19 +32,26 @@ const Clock = () => {
 
         return () => clearInterval(interval);
     }, []);
-
+    // console.log(currTime)
 
     return (
         <>
-            <div className="p-2 ">
-                <div className="bg-gradient-to-r from-slate-700 to-slate-800 rounded-lg p-4">
+            <div className="p-2  ">
+                <div
+                    style={
+                        {
+                            fontFamily: "Orbitron,sans-serif"
+                        }
+                    }
+                    className="bg-gradient-to-r from-slate-700 to-slate-800 rounded-lg py-8">
                     <div className="flex justify-center ">
                         <div className="flex gap-2 text-white text-3xl ">
-                            <h1>{currTime}</h1>
+                            <h1 className="tracking-widest  ">{currTime}</h1>
+
                         </div>
                     </div>
                     <div className="text-white text-center text-[12px]">
-                        <h1>{FormattedDateTime}</h1>
+                        <h1 className="tracking-wider">{FormattedDateTime}</h1>
                     </div>
                 </div>
             </div>
