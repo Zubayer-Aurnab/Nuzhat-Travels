@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row gap-1">
+      <div className="flex flex-col lg:flex-row gap-1 ">
         <SideBar />
         <MainPage />
       </div>

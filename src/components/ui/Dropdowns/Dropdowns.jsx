@@ -1,10 +1,15 @@
 
-import { Menu } from 'antd';
+import { Button, Menu } from 'antd';
 import "./Dropdown.css";
+import { useDispatch } from 'react-redux';
+import { controlNav } from '../../../Redux/Features/NavbarSlice/NavbarSlice';
 
 
 const Dropdowns = () => {
-
+  const dispatch = useDispatch()
+  const handelOpenNav = () => {
+    dispatch(controlNav())
+  }
   const items = [
     {
       key: '1',
@@ -320,12 +325,21 @@ const Dropdowns = () => {
     <div className="">
 
       <div className="pl-2 my-3 space-y-3">
-
+        <div className='block px-1 lg:hidden'>
+          <Button
+            onClick={handelOpenNav}
+            danger style={
+              {
+                width: "100%",
+                fontWeight: "600"
+              }
+            }>Close</Button>
+        </div>
         <Menu
           mode="inline"
           items={items}
           style={{
-            
+
           }}
           className='menu'
         />

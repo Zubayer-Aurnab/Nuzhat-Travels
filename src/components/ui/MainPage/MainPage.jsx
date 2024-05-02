@@ -6,10 +6,10 @@ import MainRight from "./MainRight/MainRight";
 
 const MainPage = () => {
     return (
-        <div className="h-screen  lg:w-[85%] mt-[1px]">
+        <div className="h-screen  lg:w-[85%] mt-[1px] absolute lg:relative lg:flex lg:flex-col">
             <NavBar />
             <RadioButtons />
-            <div className="flex flex-col lg:flex-row gap-4 mt-20 px-2">
+            <div className="flex flex-col lg:flex-row gap-4 mt-6 lg:mt-20 px-2">
                 <MainLeft />
                 <MainRight />
             </div>

@@ -3,21 +3,36 @@ import { MdSearch } from "react-icons/md";
 import { FaSms } from "react-icons/fa";
 import { IoNotificationsCircleSharp } from "react-icons/io5";
 import { FaLightbulb } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { controlNav } from "../../../Redux/Features/NavbarSlice/NavbarSlice";
 
 const NavBar = () => {
+    const dispatch = useDispatch()
+    const handelOpenNav = () => {
+        dispatch(controlNav())
+    }
     return (
         <>
-            <div className="border-black border mt-8" ></div>
-            <div className="flex justify-between items-center shadow-sm" >
+            <div className="border-black border mt-2" ></div>
+            <div className="flex justify-between items-center shadow-md" >
 
                 <div className="flex items-center">
-                    <div>
-                        <div className="p-2 bg-slate-200 w-10 flex justify-center items-center rounded-md">
+                    <div className="px-2 lg:px-0">
+                        <div
+                            onClick={handelOpenNav}
+                            className="p-2 bg-slate-200 w-10 flex lg:hidden justify-center items-center rounded-md">
                             <RiMenuFold2Fill />
                         </div>
 
                     </div>
-                    <div className="relative    py-2 ml-2">
+                    <div className="px-2 lg:px-0">
+                        <div
+                            className="p-2 bg-slate-200 w-10 hidden lg:flex justify-center items-center rounded-md ">
+                            <RiMenuFold2Fill />
+                        </div>
+
+                    </div>
+                    <div className="relative  lg:block  py-2 ml-2">
                         <input
                             type="text"
                             className="border-[1px] border-black rounded-full" />
@@ -28,14 +43,14 @@ const NavBar = () => {
                 </div>
 
                 <div className="flex" >
-                    <div className="flex ">
-                        <div className="w-10 flex justify-center items-center">
-                            <FaSms className="text-blue-400 text-3xl" />
-                        </div> <div className="w-10 flex justify-center items-center">
-                            <IoNotificationsCircleSharp className="text-blue-400 text-3xl" />
+                    <div className="flex gap-2 lg:gap-0 px-2">
+                        <div className="lg:w-10 flex justify-center items-center">
+                            <FaSms className="text-blue-400 text-2xl lg:text-3xl" />
+                        </div> <div className="lg:w-10 flex justify-center items-center">
+                            <IoNotificationsCircleSharp className="text-blue-400 text-2xl lg:text-3xl " />
                         </div>
-                        <div className="w-10 flex justify-center items-center">
-                            <FaLightbulb className="text-blue-400 text-2xl" />
+                        <div className="lg:w-10 flex justify-center items-center">
+                            <FaLightbulb className="text-blue-400 text-xl lg:text-2xl" />
                         </div>
                     </div>
                     <div className="">
