@@ -5,7 +5,7 @@ const CountryTax = () => {
     return (
         <div>
             <div className="bg-gray-200 p-4 pb-8 rounded-lg mt-4 px-2">
-                <div className="my-8">
+                <div className="lg:my-8">
                     <Divider
                         orientation="left"
                         style={{
@@ -17,7 +17,7 @@ const CountryTax = () => {
                     </Divider>
                 </div>
 
-                <div className=" flex  gap-1 ">
+                <div className=" flex flex-wrap lg:flex-row  gap-1 ">
                     <div className=" " >
                         <label >  BD :</label> <br />
                         <input
@@ -55,7 +55,7 @@ const CountryTax = () => {
                             type="number" />
                     </div>
                 </div>
-                <div className=" flex  gap-1 mt-4">
+                <div className=" flex flex-wrap lg:flex-row  gap-1 mt-10 lg:mt-4">
                     <div className="" >
                         <label >  QA :</label> <br />
                         <input

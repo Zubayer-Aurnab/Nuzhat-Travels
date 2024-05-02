@@ -14,7 +14,7 @@ const PassportDetails = () => {
                 >
                     PAX & Passport Details 👮
                 </Divider>
-                <div className=" flex  gap-1 mt-4">
+                <div className=" flex flex-wrap lg:flex-row  gap-1 mt-4">
                     <div className="" >
                         <label >  Passport NO :</label> <br />
                         <input
@@ -52,18 +52,18 @@ const PassportDetails = () => {
                             type="number" />
                     </div>
                 </div>
-                <div className=" flex gap-10 mt-5">
+                <div className=" flex flex-wrap lg:flex-row gap-10 mt-5">
 
                     <div className="">
                         <label > <span className="text-red-500 font-bold">*</span> Base Fare (Buy):</label> <br />
                         <input
-                            className="mt-2 p-1 rounded-md"
+                            className="mt-2 lg:p-1 rounded-md"
                             type="date" />
                     </div>
                     <div className="">
                         <label > <span className="text-red-500 font-bold">*</span> Base Fare (Buy):</label> <br />
                         <input
-                            className="mt-2 p-1 rounded-md"
+                            className="mt-2 lg:p-1 rounded-md"
                             type="date" />
                     </div>
                     <div className=" flex justify-center items-end ">

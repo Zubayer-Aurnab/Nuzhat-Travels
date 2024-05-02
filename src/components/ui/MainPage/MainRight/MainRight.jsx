@@ -1,9 +1,13 @@
+import Table from "./Table/Table";
 
 
 const MainRight = () => {
     return (
-        <div className="h-screen  w-[30%]">
-            <div className=" flex  gap-1 mt-4 ">
+        <div className="h-screen  lg:w-[30%]">
+
+            <Table />
+
+            <div className=" flex flex-wrap lg:flex-row  gap-1 mt-4 ">
                 <div className="" >
                     <label >  Discount :</label> <br />
                     <input
@@ -18,7 +22,7 @@ const MainRight = () => {
                 </div>
 
             </div>
-            <div className=" flex  gap-1 mt-4 ">
+            <div className=" flex flex-wrap lg:flex-row  gap-1 mt-4 ">
                 <div className="" >
                     <label >  Vat/Tax :</label> <br />
                     <input
@@ -33,7 +37,7 @@ const MainRight = () => {
                 </div>
 
             </div>
-            <div className=" flex  gap-1 mt-4 ">
+            <div className=" flex flex-wrap lg:flex-row  gap-1 mt-4 ">
                 <div className="" >
                     <label >  Agent Commiosion :</label> <br />
                     <input
@@ -48,16 +52,16 @@ const MainRight = () => {
                 </div>
 
             </div>
-            <div className=" flex  gap-1 mt-4 ">
-                <div className="">
+            <div className=" flex flex-wrap lg:flex-row  gap-1 mt-4 ">
+                <div className="w-full">
                     <label > Note:</label> <br />
-                    <textarea name="" id="" cols="50" rows="8" className="bg-gray-200"></textarea>
+                    <textarea name="" id="" cols="10" rows="8" className="bg-gray-200 w-full"></textarea>
                 </div>
             </div>
-            <div className=" flex  gap-1 mt-4 ">
+            <div className=" flex flex-col lg:flex-row  gap-1 mt-4 ">
                 <div>
                     <h1 className="font-bold ml-2">Show prev Disocunt in this invoice</h1>
-                    <div className="space-x-2">
+                    <div className="space-x-2 mt-1 px-2">
                         <input type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
                         <label >Yes</label>
                         <input type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
@@ -66,7 +70,7 @@ const MainRight = () => {
                 </div>
                 <div>
                     <h1 className="font-bold ml-2">Show prev Disocunt in this invoice</h1>
-                    <div className="space-x-2">
+                    <div className="space-x-2 mt-1 px-2">
                         <input type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
                         <label >Yes</label>
                         <input type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
@@ -77,7 +81,7 @@ const MainRight = () => {
 
 
             </div>
-            <div className=" flex  gap-1 mt-4 ">
+            <div className=" flex  flex-col lg:flex-row gap-1 mt-4 ">
                 <button className="border-dotted border-black border bg-gray-200 p-2 rounded-lg">Add Money Receipt</button>
                 <button className="border-dotted border-black border bg-gray-200 p-2 rounded-lg">CREATE</button>
                 <button className="border-dotted border-black border bg-gray-200 p-2 rounded-lg">CREATE & PREVIEW</button>

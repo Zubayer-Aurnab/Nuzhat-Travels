@@ -325,7 +325,7 @@ const Dropdowns = () => {
           mode="inline"
           items={items}
           style={{
-            borderRadius: "10px 0px 0px 10px",
+            
           }}
           className='menu'
         />

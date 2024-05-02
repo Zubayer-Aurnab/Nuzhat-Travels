@@ -7,7 +7,7 @@ import TicketDetails from "./TicketDetails/TicketDetails";
 
 const MainLeft = () => {
     return (
-        <div className="  w-[70%]">
+        <div className="  lg:w-[70%]">
             <SearchClient />
             <TicketDetails />
             <CountryTax />

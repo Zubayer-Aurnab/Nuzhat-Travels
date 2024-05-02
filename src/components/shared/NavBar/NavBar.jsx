@@ -39,7 +39,7 @@ const NavBar = () => {
                         </div>
                     </div>
                     <div className="">
-                        <img className="" src="https://nuzhattravelexpress.com/wp-content/uploads/2023/06/nuzhat-travel-express-logo-167x56.png" alt="" />
+                        <img className="w-full" src="https://nuzhattravelexpress.com/wp-content/uploads/2023/06/nuzhat-travel-express-logo-167x56.png" alt="" />
                     </div>
 
                 </div>
