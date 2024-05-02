@@ -25,7 +25,7 @@ const Clock = () => {
                 <div className="p-2 ">
                     <div className="bg-gradient-to-r from-slate-700 to-slate-800 ... rounded-lg p-4">
                         <div className="flex justify-center ">
-                            <div className="flex gap-2 text-white text-2xl ">
+                            <div className="flex gap-2 text-white text-3xl ">
                                 <h1>{CurrentTime?.slice(0, 8)}</h1>
                                 <p>{CurrentTime?.slice(-2)}</p>
                             </div>

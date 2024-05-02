@@ -1,275 +1,336 @@
-import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+import { Menu } from 'antd';
+import "./Dropdown.css";
 
 
 const Dropdowns = () => {
+
+  const items = [
+    {
+      key: '1',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Ait Ticket invoice</span>,
+      children: [
+        {
+          key: '11',
+          label: ' Ait Ticket invoice 1',
+        },
+        {
+          key: '12',
+          label: ' Ait Ticket invoice 2',
+        },
+        {
+          key: '13',
+          label: ' Ait Ticket invoice 3',
+        },
+        {
+          key: '14',
+          label: ' Ait Ticket invoice 4',
+        },
+      ],
+    },
+    {
+      key: '2',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Tour Invoice</span>,
+      children: [
+        {
+          key: '11',
+          label: ' Tour Invoice 1',
+        },
+        {
+          key: '12',
+          label: ' Tour Invoice 2',
+        },
+        {
+          key: '13',
+          label: ' Tour Invoice 3',
+        },
+        {
+          key: '14',
+          label: ' Tour Invoice 4',
+        },
+      ],
+    },
+    {
+      key: '3',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Hajj/Umra invoice</span>,
+      children: [
+        {
+          key: '11',
+          label: ' Hajj/Umra invoice',
+        },
+        {
+          key: '12',
+          label: ' Hajj/Umra invoice 2',
+        },
+        {
+          key: '13',
+          label: ' Hajj/Umra invoice 3',
+        },
+        {
+          key: '14',
+          label: ' Hajj/Umra invoice 4',
+        },
+      ],
+    },
+    {
+      key: '4',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> BMET</span>,
+      children: [
+        {
+          key: '11',
+          label: 'BMET',
+        },
+        {
+          key: '12',
+          label: ' BMET2',
+        },
+        {
+          key: '13',
+          label: ' BMET 3',
+        },
+        {
+          key: '14',
+          label: 'BMET',
+        },
+      ],
+    },
+    {
+      key: '5',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Passport Manage</span>,
+      children: [
+        {
+          key: '11',
+          label: 'BMET',
+        },
+        {
+          key: '12',
+          label: ' BMET2',
+        },
+        {
+          key: '13',
+          label: ' BMET 3',
+        },
+        {
+          key: '14',
+          label: 'BMET',
+        },
+      ],
+    },
+    {
+      key: '6',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Payroll</span>,
+      children: [
+        {
+          key: '11',
+          label: 'Payroll',
+        },
+        {
+          key: '12',
+          label: ' Payroll',
+        },
+        {
+          key: '13',
+          label: ' Payroll 3',
+        },
+        {
+          key: '14',
+          label: 'Payroll',
+        },
+      ],
+    },
+    {
+      key: '7',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Other Invoice</span>,
+      children: [
+        {
+          key: '11',
+          label: 'Other Invoice',
+        },
+        {
+          key: '12',
+          label: ' Other Invoice',
+        },
+        {
+          key: '13',
+          label: ' Other Invoice 3',
+        },
+        {
+          key: '14',
+          label: 'Other Invoice',
+        },
+      ],
+    },
+    {
+      key: '8',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Expence</span>,
+      children: [
+        {
+          key: '11',
+          label: 'Expence',
+        },
+        {
+          key: '12',
+          label: ' Expence',
+        },
+        {
+          key: '13',
+          label: ' Expence 3',
+        },
+        {
+          key: '14',
+          label: 'Expence',
+        },
+      ],
+    },
+    {
+      key: '9',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Pax Wise Invoice</span>,
+      children: [
+        {
+          key: '11',
+          label: 'Pax Wise Invoice',
+        },
+        {
+          key: '12',
+          label: ' Pax Wise Invoice',
+        },
+        {
+          key: '13',
+          label: ' Pax Wise Invoice 3',
+        },
+        {
+          key: '14',
+          label: 'Pax Wise Invoice',
+        },
+      ],
+    },
+    {
+      key: '10',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Cheque Managment</span>,
+      children: [
+        {
+          key: '11',
+          label: 'Cheque Managment',
+        },
+        {
+          key: '12',
+          label: ' Cheque Managment',
+        },
+        {
+          key: '13',
+          label: ' Cheque Managment 3',
+        },
+        {
+          key: '14',
+          label: 'Cheque Managment',
+        },
+      ],
+    },
+    {
+      key: '11',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Quotation</span>,
+      children: [
+        {
+          key: '11',
+          label: 'Quotation',
+        },
+        {
+          key: '12',
+          label: ' Quotation',
+        },
+        {
+          key: '13',
+          label: ' Quotation 3',
+        },
+        {
+          key: '14',
+          label: 'Quotation',
+        },
+      ],
+    },
+    {
+      key: '11',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Agent/Vendor/Clients Maintain</span>,
+      children: [
+        {
+          key: '11',
+          label: ' Agent/Vendor/Clients Maintain',
+        },
+        {
+          key: '12',
+          label: '  Agent/Vendor/Clients Maintain',
+        },
+        {
+          key: '13',
+          label: '  Agent/Vendor/Clients Maintain 3',
+        },
+        {
+          key: '14',
+          label: ' Agent/Vendor/Clients Maintain',
+        },
+      ],
+    },
+    {
+      key: '12',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Reports</span>,
+      children: [
+        {
+          key: '11',
+          label: ' Reports',
+        },
+        {
+          key: '12',
+          label: '  Reports',
+        },
+        {
+          key: '13',
+          label: '  Reports 3',
+        },
+        {
+          key: '14',
+          label: ' Reports',
+        },
+      ],
+    },
+    {
+      key: '13',
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Configuration</span>,
+      children: [
+        {
+          key: '11',
+          label: ' Configuration',
+        },
+        {
+          key: '12',
+          label: '  Configuration',
+        },
+        {
+          key: '13',
+          label: '  Configuration 3',
+        },
+        {
+          key: '14',
+          label: ' Configuration',
+        },
+      ],
+    },
+
+  ];
   return (
     <div className="">
+
       <div className="pl-2 my-3 space-y-3">
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-            Ait Ticket invoice
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-            Ait Ticket invoice </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Ait Ticket invoice </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Ait Ticket invoice </AccordionDetails>
 
-        </Accordion>
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-            Tour invoice
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-            Tour invoice </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Tour invoice </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Tour invoice </AccordionDetails>
+        <Menu
+          mode="inline"
+          items={items}
+          style={{
+            borderRadius: "10px 0px 0px 10px",
+          }}
+          className='menu'
+        />
 
-        </Accordion>
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-            Hajj/Umra invoice
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-            Hajj/Umra invoice </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Hajj/Umra invoice </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Hajj/Umra invoice </AccordionDetails>
 
-        </Accordion>
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-            BMET
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-            BMET </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            BMET </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            BMET </AccordionDetails>
-
-        </Accordion>
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-            Passport Manage
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-            Passport Manage </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Passport Manage </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Passport Manage </AccordionDetails>
-
-        </Accordion>
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-            PAYROLL
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-            PAYROLL </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            PAYROLL </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            PAYROLL </AccordionDetails>
-
-        </Accordion>
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-            Other Invoice
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-            Other Invoice </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Other Invoice </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Other Invoice </AccordionDetails>
-
-        </Accordion>
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-            Expence
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-            Expence </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Expence </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            Expence </AccordionDetails>
-
-        </Accordion>
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-            PAX WISE INVOIC
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-            PAX WISE INVOIC </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            PAX WISE INVOIC </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            PAX WISE INVOIC </AccordionDetails>
-
-        </Accordion>
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-            CHEQE Invoice
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-            CHEQE Invoice </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            CHEQE Invoice </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-            CHEQE Invoice </AccordionDetails>
-
-        </Accordion>
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-           Quotation
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-           Quotation </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-           Quotation </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-           Quotation </AccordionDetails>
-
-        </Accordion>
-        <Accordion elevation={0} >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            sx={{
-              bgcolor: "#002884",
-              color: "white",
-              borderRadius: "10px 0px 0px 10px "
-            }}
-            className="hover:bg-red-500"
-          >
-          Configuration
-          </AccordionSummary>
-          <AccordionDetails className="hover:bg-slate-300">
-          Configuration </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-          Configuration </AccordionDetails>
-          <AccordionDetails className="hover:bg-slate-300">
-          Configuration </AccordionDetails>
-
-        </Accordion>
       </div >
     </div>
   );

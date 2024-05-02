@@ -1,12 +1,19 @@
+import { Divider } from "antd";
 import { FaPlus } from "react-icons/fa";
 
 const PassportDetails = () => {
     return (
         <div>
             <div className="bg-gray-200 p-4 pb-8 rounded-lg mt-4 px-2">
-                <div className="divider my-8 ">
-                    <h1 className="text-lg font-bold">PAX & Passport Details 👮 </h1>
-                </div>
+                <Divider
+                    orientation="left"
+                    style={{
+                        fontSize: "18px",
+                        fontWeight: "700"
+                    }}
+                >
+                    PAX & Passport Details 👮
+                </Divider>
                 <div className=" flex  gap-1 mt-4">
                     <div className="" >
                         <label >  Passport NO :</label> <br />

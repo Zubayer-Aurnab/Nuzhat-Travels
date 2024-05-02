@@ -1,12 +1,26 @@
+// import Divider from "../../../../shared/Divider/Divider";
+
+import { Divider } from "antd";
+
+
 
 
 const TicketDetails = () => {
     return (
         <div className="bg-gray-200 p-4 rounded-lg mt-4 px-2">
 
-            <div className="divider my-8 ">
-                <h1 className="text-lg font-bold">Ticket Details 🟥</h1>
+            
+            <div className="divider my-8">
+                <Divider
+                    orientation="left"
+                    style={{
+                        fontSize: "18px"
+                    }}
+                >
+                    Ticket Details 🟥
+                </Divider>
             </div>
+
             <div className=" flex gap-10">
                 <div className="w-full" >
                     <label > <span className="text-red-500 font-bold">*</span> Ticket No :</label> <br />

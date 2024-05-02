@@ -1,3 +1,4 @@
+import { Divider } from "antd";
 import { FaPlus } from "react-icons/fa";
 
 
@@ -5,9 +6,16 @@ const FlightDetails = () => {
     return (
         <div>
             <div className="bg-gray-200 p-4 pb-8 rounded-lg mt-4 px-2">
-
-                <div className="divider my-8 ">
-                    <h1 className="text-lg font-bold">Flight Details ✈️</h1>
+                <div className="my-8">
+                    <Divider
+                        orientation="left"
+                        style={{
+                            fontSize: "18px",
+                            fontWeight: "700"
+                        }}
+                    >
+                        Flight Details ✈️
+                    </Divider>
                 </div>
 
                 <div className=" flex gap-10">
