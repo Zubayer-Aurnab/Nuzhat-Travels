@@ -1,9 +1,10 @@
 
 import { Button, Menu, Space } from 'antd';
-import "./Dropdown.css";
+import { IoAirplane } from "react-icons/io5";
 import { useDispatch } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { controlNav } from '../../../Redux/Features/NavbarSlice/NavbarSlice';
-
+import "./Dropdown.css";
 
 const Dropdowns = () => {
   const dispatch = useDispatch()
@@ -12,49 +13,59 @@ const Dropdowns = () => {
   }
   const items = [
     {
+      key: '2', label: <NavLink
+        to={`/`}
+        className={({ isActive, isPending }) =>
+          isActive
+            ? "flex items-center gap-2"
+            : isPending
+              ? "pending"
+              : "flex items-center gap-2"
+        }
+      >
+        <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Dashboard</span>
+      </NavLink>,
+    },
+    {
       key: '1',
+
       label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Ait Ticket invoice</span>,
       children: [
         {
-          key: '11',
-          label: ' Ait Ticket invoice 1',
+          key: 'CM',
+          label: <NavLink
+            to={`/commison`}
+            className={({ isActive, isPending }) =>
+              isActive
+                ? "flex items-center gap-2"
+                : isPending
+                  ? "pending"
+                  : "flex items-center gap-2"
+            }
+          >
+            <IoAirplane /> Commison Invoice
+          </NavLink>
         },
         {
-          key: '12',
-          label: ' Ait Ticket invoice 2',
+          key: 'NCM',
+          label: <NavLink
+            to={`/non-commison`}
+            className={({ isActive, isPending }) =>
+              isActive
+                ? "flex items-center gap-2"
+                : isPending
+                  ? "pending"
+                  : "flex items-center gap-2"
+            }
+          >
+            <IoAirplane /> Non Commisonal  invoice
+          </NavLink>
+
         },
-        {
-          key: '13',
-          label: ' Ait Ticket invoice 3',
-        },
-        {
-          key: '14',
-          label: ' Ait Ticket invoice 4',
-        },
+
       ],
     },
-    {
-      key: '2',
-      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Tour Invoice</span>,
-      children: [
-        {
-          key: '11',
-          label: ' Tour Invoice 1',
-        },
-        {
-          key: '12',
-          label: ' Tour Invoice 2',
-        },
-        {
-          key: '13',
-          label: ' Tour Invoice 3',
-        },
-        {
-          key: '14',
-          label: ' Tour Invoice 4',
-        },
-      ],
-    },
+
     {
       key: '3',
       label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Hajj/Umra invoice</span>,

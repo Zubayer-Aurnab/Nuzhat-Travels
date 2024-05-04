@@ -11,3 +11,24 @@
     background: #fd5c63 !important;
 
 }
+
+.ant-menu-item-only-child {
+    transition: background-color 0.5s ease;
+    background-color: #1F75FE;
+    color: white !important;
+    margin-bottom: 17px !important;
+
+}
+
+.ant-menu-item-only-child:hover {
+
+    background: #fd5c63 !important;
+
+}
+
+.ant-menu-item-selected {
+    transition: background-color 0.5s ease;
+    background-color: #fd5c63 !important;
+    color: white !important;
+    margin-bottom: 17px;
+}

@@ -17,12 +17,12 @@ const CountryTax = () => {
                     </Divider>
                 </div>
 
-                <div className=" flex flex-wrap gap-1 lg:flex-row ">
-                    <div className=" " >
-                        <label >  BD :</label> <br />
+                <div className=" flex flex-wrap lg:flex-row gap-5 mt-4">
+                    <div className="" >
+                        <label > BD :</label> <br />
                         <input
                             className="mt-2  rounded-md"
-                            type="number " />
+                            type="number" />
                     </div>
                     <div className="">
                         <label > UT:</label> <br />
@@ -31,36 +31,32 @@ const CountryTax = () => {
                             type="number" />
                     </div>
                     <div className="">
-                        <label >  US:</label> <br />
+                        <label > ES:</label> <br />
                         <input
                             className="mt-2  rounded-md"
                             type="number" />
                     </div>
                     <div className="">
-                        <label >  XT:</label> <br />
+                        <label >XT:</label> <br />
                         <input
                             className="mt-2  rounded-md"
                             type="number" />
                     </div>
                     <div className="">
-                        <label >  OW:</label> <br />
+                        <label >OW:</label> <br />
                         <input
                             className="mt-2  rounded-md"
                             type="number" />
                     </div>
                     <div className="">
-                        <label >  ES:</label> <br />
+                        <label >E5:</label> <br />
                         <input
                             className="mt-2  rounded-md"
                             type="number" />
                     </div>
-                </div>
-                <div className=" flex flex-wrap lg:flex-row  gap-1 mt-10 lg:mt-4">
-                    <div className="" >
-                        <label >  QA :</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                    <div className="">
+                        <label > QA:</label> <br />
+                        <input className="mt-2  rounded-md" type="number" />
                     </div>
                     <div className="">
                         <label > PZ:</label> <br />
@@ -69,25 +65,25 @@ const CountryTax = () => {
                             type="number" />
                     </div>
                     <div className="">
-                        <label >  G4:</label> <br />
+                        <label > G4:</label> <br />
                         <input
                             className="mt-2  rounded-md"
                             type="number" />
                     </div>
                     <div className="">
-                        <label >  P7:</label> <br />
+                        <label >P7:</label> <br />
                         <input
                             className="mt-2  rounded-md"
                             type="number" />
                     </div>
                     <div className="">
-                        <label >  P8:</label> <br />
+                        <label >P8:</label> <br />
                         <input
                             className="mt-2  rounded-md"
                             type="number" />
                     </div>
                     <div className="">
-                        <label >  r9:</label> <br />
+                        <label >R9:</label> <br />
                         <input
                             className="mt-2  rounded-md"
                             type="number" />

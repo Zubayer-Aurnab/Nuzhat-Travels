@@ -1,0 +1,9 @@
+.ant-collapse-header {
+    padding: 0 !important;
+    font-weight: 700;
+}
+
+.ant-collapse-content-box {
+    padding: 0 !important;
+    margin-top: 30px !important;
+}

@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 
 const Clock = () => {
 
-    const [CurrentTime, setCurrentTime] = useState("");
+    const [, setCurrentTime] = useState("");
     const [FormattedDateTime, setFormattedDateTime] = useState("");
-    const currDate = new Date().toLocaleDateString();
+    // const currDate = new Date().toLocaleDateString();
     const currTime = new Date().toLocaleTimeString();
-    console.log(currDate)
+    // console.log(currDate)
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -43,7 +43,7 @@ const Clock = () => {
                             fontFamily: "Orbitron,sans-serif"
                         }
                     }
-                    className="bg-gradient-to-r from-slate-700 to-slate-800 rounded-lg py-8">
+                    className="bg-gradient-to-r from-slate-500 to-slate-800 rounded-lg py-8">
                     <div className="flex justify-center ">
                         <div className="flex gap-2 text-white text-3xl ">
                             <h1 className="tracking-widest  ">{currTime}</h1>

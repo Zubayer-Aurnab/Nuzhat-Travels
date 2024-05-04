@@ -1,7 +1,7 @@
 import { Divider } from "antd";
 
 
-const FlightDetails = () => {
+const FlightDetailsNC = () => {
     return (
         <div>
             <div className="bg-gray-200 p-4 pb-8 rounded-lg mt-4 px-2">
@@ -30,7 +30,19 @@ const FlightDetails = () => {
                         </select>
                     </div>
                     <div className="">
-                        <label >  Gross Fare (Sale):</label> <br />
+                        <label > TO:</label> <br />
+                        <select
+
+                            name="Client name" id="" className="lg:mt-2 lg:p-1  rounded-md">
+                            <option value="" disabled>Select Vendor  </option>
+                            <option value="">Clinet </option>
+                            <option value="">Clinet </option>
+                            <option value="">Clinet </option>
+                        </select>
+                    </div>
+                    < div className="">
+                        <label >  Airline:</label> <br />
+
                         <select
 
                             name="Client name" id="" className="lg:mt-2 lg:p-1  rounded-md">
@@ -41,37 +53,25 @@ const FlightDetails = () => {
                         </select>
                     </div>
                     <div className="">
-                        <label >  Base Fare (Buy):</label> <br />
-
-                        <select
-
-                            name="Client name" id="" className="lg:mt-2 lg:p-1  rounded-md">
-                            <option value="" disabled>Select Vendor  </option>
-                            <option value="">Clinet </option>
-                            <option value="">Clinet </option>
-                            <option value="">Clinet </option>
-                        </select>
-                    </div>
-                    <div className="">
-                        <label >  Vendor:</label> <br />
+                        <label >  Flight No:</label> <br />
                         <input
                             className="lg:mt-2 lg:p-1 rounded-md"
                             type="number" />
                     </div>
                     <div className="">
-                        <label > Flight Date:</label> <br />
+                        <label > Journey Date:</label> <br />
                         <input
                             className="mt-2 lg:p-1 rounded-md"
                             type="date" />
                     </div>
                     <div className="">
-                        <label >  Departure Date:</label> <br />
+                        <label >  Return Date:</label> <br />
                         <input
                             className="mt-2 p-1 rounded-md"
                             type="date" />
                     </div>
                     <div className="">
-                        <label >  Travel Time:</label> <br />
+                        <label >  Arrival Time:</label> <br />
                         <input
                             className="mt-2 p-1 rounded-md"
                             type="date" />
@@ -82,4 +82,4 @@ const FlightDetails = () => {
     );
 };
 
-export default FlightDetails;
+export default FlightDetailsNC;

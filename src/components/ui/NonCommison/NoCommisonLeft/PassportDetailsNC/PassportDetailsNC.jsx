@@ -1,6 +1,7 @@
 import { Divider } from "antd";
 
-const PassportDetails = () => {
+
+const PassportDetailsNC = () => {
     return (
         <div>
             <div className="bg-gray-200 p-4 pb-8 rounded-lg mt-4 px-2">
@@ -15,7 +16,7 @@ const PassportDetails = () => {
                 </Divider>
                 <div className=" flex flex-wrap lg:flex-row  gap-2 lg:gap-10 mt-4">
                     <div className="" >
-                        <label >  Passport NO :</label> <br />
+                        <label >  Name  :</label> <br />
                         <input
                             className="mt-2  rounded-md"
                             type="number" />
@@ -51,13 +52,13 @@ const PassportDetails = () => {
                             type="number" />
                     </div>
                     <div className="">
-                        <label > <span className="text-red-500 font-bold">*</span> Base Fare (Buy):</label> <br />
+                        <label > <span className="text-red-500 font-bold">*</span> Date of expire:</label> <br />
                         <input
                             className="mt-2 px-2 rounded-md"
                             type="date" />
                     </div>
                     <div className="">
-                        <label > <span className="text-red-500 font-bold">*</span> Base Fare (Buy):</label> <br />
+                        <label > <span className="text-red-500 font-bold">*</span> Date of expire:</label> <br />
                         <input
                             className="mt-2 px-2 rounded-md"
                             type="date" />
@@ -68,4 +69,4 @@ const PassportDetails = () => {
     );
 };
 
-export default PassportDetails;
+export default PassportDetailsNC;

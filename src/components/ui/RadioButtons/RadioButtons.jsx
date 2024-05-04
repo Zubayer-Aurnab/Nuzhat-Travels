@@ -2,7 +2,7 @@
 
 const RadioButtons = () => {
     return (
-        <div className="px-2 lg:px-10  mt-6 lg:mt-20">
+        <div className="px-2 lg:px-4  mt-6 lg:mt-10">
             <div className="flex justify-between flex-col lg:flex-row px-4 lg:px-10 bg-gray-200 py-4 rounded-lg ">
                 <div>
                     <input type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
