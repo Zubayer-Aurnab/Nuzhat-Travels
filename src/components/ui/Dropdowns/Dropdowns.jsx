@@ -1,10 +1,12 @@
 
 import { Button, Menu, Space } from 'antd';
+import { FaPlus } from "react-icons/fa6";
 import { IoAirplane } from "react-icons/io5";
 import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { controlNav } from '../../../Redux/Features/NavbarSlice/NavbarSlice';
 import "./Dropdown.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Dropdowns = () => {
   const dispatch = useDispatch()
@@ -25,11 +27,20 @@ const Dropdowns = () => {
       >
         <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Dashboard</span>
       </NavLink>,
+      children: []
     },
+    // 2----------
     {
       key: '1',
-
-      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Ait Ticket invoice</span>,
+      icons: <IoAirplane />,
+      label: <span style={{
+        color: "white",
+        fontWeight: "600",
+        fontSize: "16px",
+        display: "flex",
+        alignItems: "center",
+        gap: "10px"
+      }}> <IoAirplane /> invoice (Ait Ticket)</span>,
       children: [
         {
           key: 'CM',
@@ -43,9 +54,38 @@ const Dropdowns = () => {
                   : "flex items-center gap-2"
             }
           >
-            <IoAirplane /> Commison Invoice
+            <FaPlus />New Invoice (Ait Ticket)
           </NavLink>
         },
+        {
+          key: 'VIAT',
+          label: <NavLink
+            to={`/view-invoice`}
+            className={({ isActive, isPending }) =>
+              isActive
+                ? "flex items-center gap-2"
+                : isPending
+                  ? "pending"
+                  : "flex items-center gap-2"
+            }
+          >
+            <GiHamburgerMenu />View Invoice (Ait Ticket)
+          </NavLink>
+        },
+      ],
+    },
+    // 3-----------
+    {
+      key: '3',
+      label: <span style={{
+        color: "white",
+        fontWeight: "600",
+        fontSize: "16px",
+        display: "flex",
+        alignItems: "center",
+        gap: "10px"
+      }}> <IoAirplane /> invoice (Non commission)</span>,
+      children: [
         {
           key: 'NCM',
           label: <NavLink
@@ -62,32 +102,9 @@ const Dropdowns = () => {
           </NavLink>
 
         },
-
       ],
     },
-
-    {
-      key: '3',
-      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Hajj/Umra invoice</span>,
-      children: [
-        {
-          key: '11',
-          label: ' Hajj/Umra invoice',
-        },
-        {
-          key: '12',
-          label: ' Hajj/Umra invoice 2',
-        },
-        {
-          key: '13',
-          label: ' Hajj/Umra invoice 3',
-        },
-        {
-          key: '14',
-          label: ' Hajj/Umra invoice 4',
-        },
-      ],
-    },
+    // 4-----------
     {
       key: '4',
       label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> BMET</span>,
@@ -352,6 +369,7 @@ const Dropdowns = () => {
           <Menu
             mode="inline"
             items={items}
+
             style={{
 
             }}

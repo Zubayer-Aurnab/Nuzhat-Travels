@@ -5,7 +5,8 @@ import {
 import App from "../App";
 import Mainpage from '../components/ui/MainPage/MainPage'
 import NonCommison from "../components/ui/NonCommison/NonCommison";
-import Dashboard from "../components/ui/Dashboard/Dashboard";
+import Dashboard from "../pages/Dashboard/Dashboard"
+import ViewInvoice from "../pages/ViewInvoice/ViewInvoice";
 
 export const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
             {
                 path: "commison",
                 element: <Mainpage />
+            },
+            {
+                path: "view-invoice",
+                element: <ViewInvoice />
             }
         ]
     },
