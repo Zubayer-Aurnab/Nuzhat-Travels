@@ -98,7 +98,23 @@ const Dropdowns = () => {
                   : "flex items-center gap-2"
             }
           >
-            <IoAirplane /> Non Commisonal  invoice
+            <FaPlus /> Non Commisonal  invoice
+          </NavLink>
+
+        },
+        {
+          key: 'VNC',
+          label: <NavLink
+            to={`/view-non-commission`}
+            className={({ isActive, isPending }) =>
+              isActive
+                ? "flex items-center gap-2"
+                : isPending
+                  ? "pending"
+                  : "flex items-center gap-2"
+            }
+          >
+            <GiHamburgerMenu />View Non Commission
           </NavLink>
 
         },
@@ -107,26 +123,43 @@ const Dropdowns = () => {
     // 4-----------
     {
       key: '4',
-      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> BMET</span>,
+      label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", display: "flex", alignItems: "center ", gap: "10px" }}> <IoAirplane /> Re issu- Air Ticket</span>,
       children: [
         {
-          key: '11',
-          label: 'BMET',
+          key: 'NCM',
+          label: <NavLink
+            to={`/new-invoice-reissu`}
+            className={({ isActive, isPending }) =>
+              isActive
+                ? "flex items-center gap-2"
+                : isPending
+                  ? "pending"
+                  : "flex items-center gap-2"
+            }
+          >
+            <FaPlus /> New Invoice (Re Issu)
+          </NavLink>
+
         },
         {
-          key: '12',
-          label: ' BMET2',
-        },
-        {
-          key: '13',
-          label: ' BMET 3',
-        },
-        {
-          key: '14',
-          label: 'BMET',
+          key: 'VNC',
+          label: <NavLink
+            to={`/view-non-commission`}
+            className={({ isActive, isPending }) =>
+              isActive
+                ? "flex items-center gap-2"
+                : isPending
+                  ? "pending"
+                  : "flex items-center gap-2"
+            }
+          >
+            <GiHamburgerMenu />View Invoice (Re Issu)
+          </NavLink>
+
         },
       ],
     },
+    // 5-----------
     {
       key: '5',
       label: <span style={{ color: "white", fontWeight: "600", fontSize: "16px", }}> Passport Manage</span>,

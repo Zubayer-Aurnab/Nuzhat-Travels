@@ -1,5 +1,5 @@
 import { Table } from 'antd';
-
+import './Table.css'
 
 const TableC = () => {
     const columns = [
@@ -76,7 +76,15 @@ const TableC = () => {
     };
     return (
         <div className='mt-10'>
-            <Table columns={columns} dataSource={data} bordered={true} onChange={onChange} pagination={false} />;
+            <Table
+                className='ant-table'
+                scroll={{ x: true }}
+                columns={columns}
+                dataSource={data}
+                bordered={true}
+                onChange={onChange}
+                pagination={false}
+            />
         </div>
     );
 };

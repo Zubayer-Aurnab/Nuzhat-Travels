@@ -1,0 +1,7 @@
+@media only screen and (max-width: 768px) {
+    .ant-table {
+        max-width: 385px;
+        /* Adjust the height as needed */
+        overflow-x: scroll;
+    }
+}

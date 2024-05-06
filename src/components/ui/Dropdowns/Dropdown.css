@@ -1,6 +1,7 @@
 .menu .ant-menu-submenu-title {
     transition: background-color 0.5s ease;
     background-color: #1F75FE;
+    /* background-color: #03AED2; */
     color: white !important;
     margin-bottom: 17px;
 
@@ -8,9 +9,11 @@
 
 .ant-menu-submenu-title:hover {
 
-    background: #fd5c63 !important;
+    /* background: #fd5c63 !important; */
+    background: #0E4FAB !important;
 
 }
+
 
 /* .ant-menu-item-only-child {
     transition: background-color 0.5s ease;
@@ -28,7 +31,7 @@
 
 /* .ant-menu-item-selected {
     transition: background-color 0.5s ease;
-    background-color: #fd5c63 !important;
+    background-color: #59D5E0 !important;
     color: white !important;
     margin-bottom: 17px;
 } */
