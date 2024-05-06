@@ -1,4 +1,6 @@
+import { Button, InputNumber, Radio } from "antd";
 import Table from "./Table/Table";
+import TextArea from "antd/es/input/TextArea";
 
 
 const MainRight = () => {
@@ -10,70 +12,58 @@ const MainRight = () => {
             <div className=" flex flex-wrap lg:flex-row  gap-1 mt-4 ">
                 <div className="" >
                     <label >  Discount :</label> <br />
-                    <input
-                        className="mt-2 p-2  rounded-md bg-gray-200"
-                        type="number" />
+                    <InputNumber disabled className="mt-2 w-auto " />
                 </div>
                 <div className="">
                     <label > Service Charge:</label> <br />
-                    <input
-                        className="mt-2 p-2 rounded-md bg-gray-200"
-                        type="number" />
+                    <InputNumber disabled className="mt-2 w-auto " />
                 </div>
 
             </div>
             <div className=" flex flex-wrap lg:flex-row  gap-1 mt-4 ">
                 <div className="" >
                     <label >  Vat/Tax :</label> <br />
-                    <input
-                        className="mt-2 p-2  rounded-md bg-gray-200"
-                        type="number" />
+                    <InputNumber disabled className="mt-2 w-auto " />
                 </div>
                 <div className="">
                     <label > Net total:</label> <br />
-                    <input
-                        className="mt-2 p-2 rounded-md bg-gray-200"
-                        type="number" />
+                    <InputNumber disabled className="mt-2 w-auto " />
                 </div>
 
             </div>
             <div className=" flex flex-wrap lg:flex-row  gap-1 mt-4 ">
                 <div className="" >
                     <label >  Agent Commiosion :</label> <br />
-                    <input
-                        className="mt-2 p-2  rounded-md bg-gray-200"
-                        type="number" />
+                    <InputNumber disabled className="mt-2 w-auto " />
                 </div>
                 <div className="">
                     <label > Reference:</label> <br />
-                    <input
-                        className="mt-2 p-2 rounded-md bg-gray-200"
-                        type="number" />
+                    <InputNumber disabled className="mt-2 w-auto " />
                 </div>
 
             </div>
             <div className=" flex flex-wrap lg:flex-row  gap-1 mt-4 ">
                 <div className="w-full">
                     <label > Note:</label> <br />
-                    <textarea name="" id="" cols="10" rows="8" className="bg-gray-200 w-full"></textarea>
+                    <TextArea disabled name="" id="" cols="10" rows="8" className="w-full" />
                 </div>
             </div>
             <div className=" flex flex-col lg:flex-row  gap-1 mt-4 ">
                 <div>
                     <h1 className="font-bold ml-2">Show prev Disocunt in this invoice</h1>
                     <div className="space-x-2 mt-1 px-2">
-                        <input type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
+                        <Radio disabled type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
                         <label >Yes</label>
-                        <input type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
+                        <Radio disabled type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
                         <label >no</label>
                     </div>
                 </div>
                 <div>
                     <h1 className="font-bold ml-2">Show prev Disocunt in this invoice</h1>
                     <div className="space-x-2 mt-1 px-2">
-                        <input type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
+                        <Radio disabled type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
                         <label >Yes</label>
-                        <input type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
+                        <Radio disabled type="radio" id="html" name="fav_language" value="New invoice (Commission)" />
                         <label >no</label>
                     </div>
                 </div>
@@ -82,9 +72,9 @@ const MainRight = () => {
 
             </div>
             <div className=" flex  flex-col lg:flex-row gap-1 mt-4 ">
-                <button className="border-dotted border-black border bg-gray-200 p-2 rounded-lg">Add Money Receipt</button>
-                <button className="border-dotted border-black border bg-gray-200 p-2 rounded-lg">CREATE</button>
-                <button className="border-dotted border-black border bg-gray-200 p-2 rounded-lg">CREATE & PREVIEW</button>
+                <Button disabled className="border-dotted border-black border bg-gray-200 p-2 rounded-lg">Add Money Receipt</Button>
+                <Button disabled className="border-dotted border-black border bg-gray-200 p-2 rounded-lg">CREATE</Button>
+                <Button disabled className="border-dotted border-black border bg-gray-200 p-2 rounded-lg">CREATE & PREVIEW</Button>
             </div>
 
         </div>

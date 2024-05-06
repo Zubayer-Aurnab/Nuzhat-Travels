@@ -1,4 +1,4 @@
-import { Divider } from "antd";
+import { DatePicker, Divider, Input, Select } from "antd";
 
 const PassportDetails = () => {
     return (
@@ -16,51 +16,35 @@ const PassportDetails = () => {
                 <div className=" flex flex-wrap lg:flex-row  gap-2 lg:gap-10 mt-4">
                     <div className="" >
                         <label >  Passport NO :</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <Select placeholder="Passport NO" className="w-40 mt-2" />
                     </div>
                     <div className="">
                         <label > Name:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <Input placeholder=" Name" className="mt-2 " />
                     </div>
                     <div className="">
                         <label >  Pax Type:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <Select placeholder="Pax Type" className="w-40 mt-2" />
                     </div>
                     <div className="">
                         <label >  Contact No:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <Input placeholder="Contact No" className="mt-2 " />
                     </div>
                     <div className="">
                         <label >  Email:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <Input placeholder=" Email" className="mt-2 " />
                     </div>
                     <div className="">
                         <label >  Date of Brith:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <DatePicker className="mt-2 w-40" />
                     </div>
                     <div className="">
                         <label > <span className="text-red-500 font-bold">*</span> Base Fare (Buy):</label> <br />
-                        <input
-                            className="mt-2 px-2 rounded-md"
-                            type="date" />
+                        <DatePicker className="mt-2 w-40" />
                     </div>
                     <div className="">
                         <label > <span className="text-red-500 font-bold">*</span> Base Fare (Buy):</label> <br />
-                        <input
-                            className="mt-2 px-2 rounded-md"
-                            type="date" />
+                        <DatePicker className="mt-2 w-40" />
                     </div>
                 </div>
             </div>

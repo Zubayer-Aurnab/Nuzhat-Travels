@@ -1,4 +1,4 @@
-import { Divider } from "antd";
+import { DatePicker, Divider, Select } from "antd";
 
 
 const FlightDetails = () => {
@@ -20,43 +20,20 @@ const FlightDetails = () => {
                 <div className=" flex flex-wrap lg:flex-row gap-3 lg:gap-3">
                     <div className="" >
                         <label > From :</label> <br />
-                        <select
-
-                            name="Client name" id="" className="lg:mt-2 lg:p-1  rounded-md">
-                            <option value="" disabled>Select Vendor  </option>
-                            <option value="">Clinet </option>
-                            <option value="">Clinet </option>
-                            <option value="">Clinet </option>
-                        </select>
+                        <Select placeholder="" className="w-40 mt-2" />
                     </div>
                     <div className="">
                         <label >  Gross Fare (Sale):</label> <br />
-                        <select
-
-                            name="Client name" id="" className="lg:mt-2 lg:p-1  rounded-md">
-                            <option value="" disabled>Select Vendor  </option>
-                            <option value="">Clinet </option>
-                            <option value="">Clinet </option>
-                            <option value="">Clinet </option>
-                        </select>
+                        <Select placeholder="" className="w-40 mt-2" />
                     </div>
                     <div className="">
                         <label >  Base Fare (Buy):</label> <br />
 
-                        <select
-
-                            name="Client name" id="" className="lg:mt-2 lg:p-1  rounded-md">
-                            <option value="" disabled>Select Vendor  </option>
-                            <option value="">Clinet </option>
-                            <option value="">Clinet </option>
-                            <option value="">Clinet </option>
-                        </select>
+                        <Select placeholder="" className="w-40 mt-2" />
                     </div>
                     <div className="">
                         <label >  Vendor:</label> <br />
-                        <input
-                            className="lg:mt-2 lg:p-1 rounded-md"
-                            type="number" />
+                        <Select placeholder="Select Vendor" className="w-40 mt-2" />
                     </div>
                     <div className="">
                         <label > Flight Date:</label> <br />
@@ -66,15 +43,11 @@ const FlightDetails = () => {
                     </div>
                     <div className="">
                         <label >  Departure Date:</label> <br />
-                        <input
-                            className="mt-2 p-1 rounded-md"
-                            type="date" />
+                        <DatePicker className="mt-2 w-40" />
                     </div>
                     <div className="">
                         <label >  Travel Time:</label> <br />
-                        <input
-                            className="mt-2 p-1 rounded-md"
-                            type="date" />
+                        <DatePicker className="mt-2 w-40" />
                     </div>
                 </div>
             </div>

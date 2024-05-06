@@ -1,4 +1,4 @@
-import { Divider } from "antd";
+import { Divider, InputNumber } from "antd";
 
 
 const CountryTax = () => {
@@ -20,73 +20,51 @@ const CountryTax = () => {
                 <div className=" flex flex-wrap lg:flex-row gap-5 mt-4">
                     <div className="" >
                         <label > BD :</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                     <div className="">
                         <label > UT:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                     <div className="">
                         <label > ES:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                     <div className="">
                         <label >XT:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                     <div className="">
                         <label >OW:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                     <div className="">
                         <label >E5:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                     <div className="">
                         <label > QA:</label> <br />
-                        <input className="mt-2  rounded-md" type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                     <div className="">
                         <label > PZ:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                     <div className="">
                         <label > G4:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                     <div className="">
                         <label >P7:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                     <div className="">
                         <label >P8:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                     <div className="">
                         <label >R9:</label> <br />
-                        <input
-                            className="mt-2  rounded-md"
-                            type="number" />
+                        <InputNumber className="mt-2 w-auto" />
                     </div>
                 </div>
             </div>
