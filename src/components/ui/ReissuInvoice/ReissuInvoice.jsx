@@ -6,7 +6,7 @@ import ExistingClient from "./ExistingClient/ExistingClient";
 
 
 const ReissuInvoice = () => {
-    const [display, setDisplay] = useState()
+    const [display, setDisplay] = useState("new-client")
 
     const handleModeChange = (e) => {
         setDisplay(e.target.value);
@@ -30,7 +30,7 @@ const ReissuInvoice = () => {
 
             {
                 display === "new-client" ?
-                    <div className="flex flex-col lg:flex-row gap-4 mt-6 lg:mt-20 px-2">
+                    <div className="flex flex-col lg:flex-row gap-4 mt-6 lg:mt-10 px-2">
                         <ReissuInvoiceLeft />
                         <ReissuInvoiceRight />
                     </div>
