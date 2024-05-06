@@ -1,4 +1,4 @@
-import { Divider, Select } from "antd";
+import { DatePicker, Divider, Input, InputNumber, Select } from "antd";
 
 
 const TicketDetailsRI = () => {
@@ -22,85 +22,71 @@ const TicketDetailsRI = () => {
                     <div className=" flex flex-wrap lg:flex-row  gap-3 lg:gap-7">
                         <div className="" >
                             <label > <span className="text-red-500 font-bold">*</span> Ticket No :</label> <br />
-                            <input
+                            <Input
                                 className="mt-2 lg:p-1 rounded-md"
-                                type="number" />
+                            />
                         </div>
                         <div className="">
                             <label > <span className="text-red-500 font-bold">*</span> Client Price:</label> <br />
-                            <input
-                                className="mt-2 lg:p-1 rounded-md"
-                                type="number" />
+                            <InputNumber
+                                className="mt-2  w-40"
+                            />
                         </div>
                         <div className="">
                             <label > <span className="text-red-500 font-bold">*</span> Purchase Price/Partial Cost:</label> <br />
-                            <input
-                                className="mt-2 lg:p-1 rounded-md"
-                                type="number" />
+                            <InputNumber
+                                className="mt-2 w-48"
+                            />
                         </div>
                         <div className="">
                             <label > <span className="text-red-500 font-bold">*</span> Vendor:</label> <br />
-                            <select
-
-                                name="Client name" id="" className="mt-2 lg:p-1  rounded-md w-44">
-                                <option value="" disabled>Select Vendor  </option>
-                                <option value="">Clinet </option>
-                                <option value="">Clinet </option>
-                                <option value="">Clinet </option>
-                            </select>
+                            <Select placeholder="select vendor" className="w-40 mt-2" />
                         </div>
                         <div className="" >
                             <label > <span className="text-red-500 font-bold">*</span> Airline :</label> <br />
-                            <select
-
-                                name="Client name" id="" className="mt-2 lg:p-1  rounded-md w-44">
-                                <option value="" disabled>Select Airline  </option>
-                                <option value="">Clinet </option>
-                                <option value="">Clinet </option>
-                                <option value="">Clinet </option>
-                            </select>
+                            <Select placeholder="select " className="w-40 mt-2" />
                         </div>
                         <div className="">
                             <label > <span className="text-red-500 font-bold">*</span> Extra Fee :</label> <br />
-                            <input
-                                className="mt-2 lg:p-1 rounded-md"
-                                type="number" />
+                            <InputNumber
+                                className="mt-2 w-48"
+                            />
                         </div>
                         <div className="">
                             <label > <span className="text-red-500 font-bold">*</span> PRN:</label> <br />
-                            <input
-                                className="mt-2 lg:p-1 rounded-md"
-                                type="number" />
+                            <Input
+                                className="mt-2 "
+                            />
                         </div>
                         <div className="">
                             <label > <span className="text-red-500 font-bold">*</span> Router/Sector</label> <br />
-                            <input
-                                className="mt-2 lg:p-1 rounded-md"
-                                type="number" />
+                            <Select
+                                className="mt-2 w-40"
+                            />
                         </div>
                         <div className="">
                             <label > <span className="text-red-500 font-bold">*</span> AIT:</label> <br />
-                            <input
-                                className="mt-2 lg:p-1 rounded-md"
-                                type="number" />
+                            <Input
+                                className="mt-2 "
+                            />
                         </div>
                         <div className="" >
                             <label > Issue Date  :</label> <br />
-                            <input
-                                className="mt-2 lg:p-1 rounded-md"
-                                type="date" />
+                            <DatePicker
+                                className="mt-2 w-40"
+                            />
                         </div>
                         <div className="">
                             <label > Journy Date:</label> <br />
-                            <input
-                                className="mt-2 lg:p-1 rounded-md"
-                                type="date" />
+                            <DatePicker
+                                className="mt-2 w-40"
+                            />
                         </div>
                         <div className="">
                             <label > Return Date:</label> <br />
-                            <input
-                                className="mt-2 lg:p-1 rounded-md"
-                                type="date" />
+                            <DatePicker
+                                className="mt-2 w-40"
+                            />
                         </div>
                         <div className="">
                             <label >Select Airline Class:</label> <br />
