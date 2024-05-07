@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import { FaArrowLeftLong } from 'react-icons/fa6';
 import { IoPrintSharp } from 'react-icons/io5';
 import Payment from '../../components/ui/ViewIncoiveNC/Payment';
+import './ViewInvoice.css'
+import ActiveLog from '../../components/ui/ViewIncoiveNC/ActiveLog';
 
 const ViewInvoivceNonCommission = () => {
 
@@ -64,9 +66,7 @@ const ViewInvoivceNonCommission = () => {
                 tabs === "payments" && <Payment />
             }
             {
-                tabs === "activity-log" && <div>
-                    <h1 className="text-3xl">this is activity-log</h1>
-                </div>
+                tabs === "activity-log" && <ActiveLog />
             }
 
 

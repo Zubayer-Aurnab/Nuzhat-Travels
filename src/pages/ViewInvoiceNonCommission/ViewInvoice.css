@@ -1,0 +1,7 @@
+.ant-tabs-tab-active {
+    background: #1F75FE !important;
+
+    .ant-tabs-tab-btn {
+        color: white !important;
+    }
+}
