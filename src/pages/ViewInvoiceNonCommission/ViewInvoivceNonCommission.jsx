@@ -2,6 +2,7 @@
 import { Tabs } from 'antd';
 import { useState } from 'react';
 import MainInvoice from '../../components/ui/ViewIncoiveNC/MainInvoice';
+import Details from '../../components/ui/ViewIncoiveNC/Details';
 
 const ViewInvoivceNonCommission = () => {
 
@@ -49,9 +50,7 @@ const ViewInvoivceNonCommission = () => {
             }
 
             {
-                tabs === "details" && <div>
-                    <h1 className="text-3xl">this is details</h1>
-                </div>
+                tabs === "details" && <Details />
             }
             {
                 tabs === "payments" && <div>
