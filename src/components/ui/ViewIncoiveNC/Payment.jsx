@@ -1,67 +1,60 @@
 import { Divider, Table } from "antd";
 
 
-const Details = () => {
+const Payment = () => {
     const PaymentColumns = [
         {
             title: 'SL',
             dataIndex: "key"
         },
         {
-            title: 'Ticket No ',
-            dataIndex: "ticket_no"
+            title: 'Clinet Name   ',
+            dataIndex: "client_name"
         },
         {
-            title: 'PAX Name',
-            dataIndex: "pax_name"
+            title: 'Money Recipt ',
+            dataIndex: "mony_recipt"
         },
         {
-            title: 'PNR',
-            dataIndex: "pnr"
+            title: 'Payment To',
+            dataIndex: "payment_to "
         },
         {
-            title: 'Vendor',
-            dataIndex: "vendor"
+            title: 'Method',
+            dataIndex: "method"
         },
         {
-            title: 'Airline',
-            dataIndex: "airline"
+            title: 'Note',
+            dataIndex: "note"
         },
         {
-            title: 'Issu date',
-            dataIndex: "issu_date"
+            title: 'Ammount',
+            dataIndex: "ammount"
         },
         {
-            title: 'Extra Fee',
-            dataIndex: "extra_fee"
+            title: 'Received By',
+            dataIndex: "recevied_by"
         },
+
         {
-            title: 'Sold Price',
-            dataIndex: "sold_price"
+            title: 'Receipt Date',
+            dataIndex: "receipt_date"
         },
-        {
-            title: 'Purchase Price',
-            dataIndex: "purchase_price"
-        },
-        {
-            title: 'Profit ',
-            dataIndex: "profit"
-        },
+
 
     ];
     const PaymentData = [
         {
             key: 1,
-            ticket_no: 23498729384,
-            pax_name: 23498729384,
-            pnr: 23498729384,
-            vendor: 23498729384,
-            airline: 23498729384,
-            issu_date: 23498729384,
-            extra_fee: 23498729384,
-            sold_price: 23498729384,
-            purchase_price: 23498729384,
-            profit: 23498729384,
+            client_name: 23498729384,
+            mony_recipt: 23498729384,
+            payment_to: 23498729384,
+            method: 23498729384,
+            note: 23498729384,
+            ammount: 23498729384,
+            recevied_by: 23498729384,
+
+            receipt_date: 23498729384,
 
 
         },
@@ -71,7 +64,7 @@ const Details = () => {
         <div className="lg:p-20 bg-gray-200">
             <div
             >
-                <div className="bg-white rounded-lg lg:p-4 lg:w-4/6 lg:mx-auto h-screen">
+               <div className="bg-white rounded-lg lg:p-4 lg:w-4/6 lg:mx-auto h-screen">
                     <div className="flex justify-between flex-col lg:flex-row gap-4 lg:p-10 ">
                         <div> <h1>INVOICE TO</h1> <p>Name:xxxxxxxxx</p><p>Mobile:</p></div>
                         <div>
@@ -81,7 +74,7 @@ const Details = () => {
                             <p>Sales Date : 15 Oct 2023</p>
                         </div>
                     </div>
-                    <Divider orientation="left">COST INFORMATION</Divider>
+                    <Divider orientation="left">PAYMENT DETAILS</Divider>
                     {/* TABLE */}
                     <div>
                         <Table
@@ -101,4 +94,4 @@ const Details = () => {
     );
 };
 
-export default Details;
+export default Payment;

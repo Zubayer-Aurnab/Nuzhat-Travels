@@ -1,8 +1,12 @@
 
-import { Tabs } from 'antd';
+import { Button, Tabs } from 'antd';
 import { useState } from 'react';
 import MainInvoice from '../../components/ui/ViewIncoiveNC/MainInvoice';
 import Details from '../../components/ui/ViewIncoiveNC/Details';
+import { Link } from 'react-router-dom';
+import { FaArrowLeftLong } from 'react-icons/fa6';
+import { IoPrintSharp } from 'react-icons/io5';
+import Payment from '../../components/ui/ViewIncoiveNC/Payment';
 
 const ViewInvoivceNonCommission = () => {
 
@@ -35,6 +39,10 @@ const ViewInvoivceNonCommission = () => {
     // console.log(tabs);
     return (
         <div className='px-4'>
+            <div className='gap-6 mt-10 flex'>
+                <Link><Button type='primary' className='flex items-center gap-3' ><FaArrowLeftLong /> Return to invoice List</Button></Link>
+                <Button type='primary' className='flex items-center gap-1' > <IoPrintSharp />Print</Button>
+            </div>
             <div className='mt-10 '>
                 <Tabs
                     onChange={onChange}
@@ -53,9 +61,7 @@ const ViewInvoivceNonCommission = () => {
                 tabs === "details" && <Details />
             }
             {
-                tabs === "payments" && <div>
-                    <h1 className="text-3xl">this is payments</h1>
-                </div>
+                tabs === "payments" && <Payment />
             }
             {
                 tabs === "activity-log" && <div>
