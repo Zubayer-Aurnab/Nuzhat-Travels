@@ -9,6 +9,7 @@ import Dashboard from "../pages/Dashboard/Dashboard"
 import ViewInvoice from "../pages/ViewInvoice/ViewInvoice";
 import ViewNonCommission from "../pages/ViewNonCommission/ViewNonCommission";
 import NewInvoiceReIssu from "../pages/NewInvoiceReIssu/NewInvoiceReIssu";
+import ViewInvoivceNonCommission from "../pages/ViewInvoiceNonCommission/ViewInvoivceNonCommission";
 
 export const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
             {
                 path: "new-invoice-reissu",
                 element: <NewInvoiceReIssu />
+            },
+            {
+                path: "view-invoice-non-commission",
+                element: <ViewInvoivceNonCommission />
             }
         ]
     },

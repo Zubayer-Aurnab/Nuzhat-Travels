@@ -1,5 +1,6 @@
-import { Table } from 'antd';
+import { Table, Tag } from 'antd';
 import './Table.css'
+import { Link } from 'react-router-dom';
 
 const TableC = () => {
     const columns = [
@@ -39,6 +40,7 @@ const TableC = () => {
         },
         {
             title: 'Action',
+            dataIndex: "actions"
         },
     ];
     const data = [
@@ -48,6 +50,11 @@ const TableC = () => {
             chinese: 98,
             math: 60,
             english: 70,
+            actions: <span>
+                <Link to={"/view-invoice-non-commission"}> <Tag color="processing">View</Tag></Link>
+                <Tag color="processing">Edit</Tag>
+                <Tag color="processing">Partial cost</Tag>
+            </span>
         },
         {
             key: '2',
