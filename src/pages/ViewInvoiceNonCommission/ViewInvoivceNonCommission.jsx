@@ -50,6 +50,9 @@ const ViewInvoivceNonCommission = () => {
                     onChange={onChange}
                     type="card"
                     items={items}
+                    style={{
+                        fontWeight: 700
+                    }}
 
                 />
             </div>

@@ -29,7 +29,7 @@ const AccountBalanceHistory = () => {
     return (
         <div>
             <div className="shadow-xl rounded-xl  ">
-                <h1 className="p-2 bg-gradient-to-r from-[#1F75FE] to-blue-300 text-white font-bold rounded-t-md">ACCOUNT BALANCE HISTORY </h1>
+                <h1 className="p-2 bg-gradient-to-r from-[#7469B6] to-[#E1AFD1] text-white font-bold rounded-t-md">ACCOUNT BALANCE HISTORY </h1>
                 <div className="p-4  ">
                     <div className="flex justify-between font-bold mt-2">
                         <p>Sales Amoun</p>

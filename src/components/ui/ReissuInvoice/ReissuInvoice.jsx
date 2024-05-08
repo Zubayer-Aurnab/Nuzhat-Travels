@@ -7,7 +7,7 @@ import "./Reissu.css"
 
 
 const ReissuInvoice = () => {
-    const [display, setDisplay] = useState("new-client")
+    const [display, setDisplay] = useState("sssssssssssssssss")
 
     const handleModeChange = (e) => {
         setDisplay(e.target.value);

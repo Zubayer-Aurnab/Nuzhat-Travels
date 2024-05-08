@@ -1,4 +1,5 @@
 .ant-radio-button-wrapper-checked {
-    background: blue !important;
+    background: #7469B6 !important;
     color: white !important;
+    font-weight: 700;
 }

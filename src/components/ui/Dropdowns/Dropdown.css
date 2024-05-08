@@ -1,16 +1,16 @@
 .menu .ant-menu-submenu-title {
     transition: background-color 0.5s ease;
-    background-color: #1F75FE;
-    /* background-color: #03AED2; */
+    /* background-color: #1F75FE; */
+    background-color: #AD88C6;
     color: white !important;
     margin-bottom: 17px;
-
 }
 
 .ant-menu-submenu-title:hover {
 
     /* background: #fd5c63 !important; */
-    background: #0E4FAB !important;
+    /* background: #0E4FAB !important; */
+    background: #7469B6 !important;
 
 }
 

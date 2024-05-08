@@ -1,12 +1,12 @@
 
-import { Button, Menu, Space } from 'antd';
+import { Button, Menu } from 'antd';
 import { FaPlus } from "react-icons/fa6";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { IoAirplane } from "react-icons/io5";
 import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { controlNav } from '../../../Redux/Features/NavbarSlice/NavbarSlice';
 import "./Dropdown.css";
-import { GiHamburgerMenu } from "react-icons/gi";
 
 const Dropdowns = () => {
   const dispatch = useDispatch()
@@ -398,17 +398,15 @@ const Dropdowns = () => {
         </div>
 
 
-        <Space direction="vertical" size="large" style={{ display: 'flex' }}>
-          <Menu
-            mode="inline"
-            items={items}
 
-            style={{
+        <Menu
+          mode="inline"
+          items={items}
 
-            }}
-            className='menu'
-          />
-        </Space>
+
+          className='menu'
+        />
+
 
 
 

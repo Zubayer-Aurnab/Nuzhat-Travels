@@ -1,7 +1,10 @@
 .ant-tabs-tab-active {
-    background: #1F75FE !important;
+    /* background: #1F75FE !important; */
+    background: #AD88C6 !important;
+
 
     .ant-tabs-tab-btn {
         color: white !important;
+        font-weight: 700;
     }
 }
